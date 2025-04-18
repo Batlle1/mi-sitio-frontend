@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
         //     .then(response => response.json())
         //     .then(data => {
           //       mensajeDiv.textContent = data.mensaje;
-            });
-    });
-});
+       //     });
+//    });
+//});
