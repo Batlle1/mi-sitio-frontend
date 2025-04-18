@@ -1,0 +1,12 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const boton = document.getElementById('miBoton');
+    const mensajeDiv = document.getElementById('mensaje');
+
+    boton.addEventListener('click', function() {
+        fetch('/api/mensaje') // Llamada al backend
+            .then(response => response.json())
+            .then(data => {
+                mensajeDiv.textContent = data.mensaje;
+            });
+    });
+});
